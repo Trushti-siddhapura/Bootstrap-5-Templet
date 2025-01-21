@@ -1,0 +1,1020 @@
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive Navbar</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ </head>
+ <body>
+ <style>
+
+
+/*-------------nav-link----------*/
+
+.nav-link:hover {
+ color: green !important;
+}
+
+ .navbar-brand{
+  margin-left: 300px !important;
+  margin-top: 10px;
+  font-size: 1.2rem;
+
+ }
+ .custom-navbar .nav-item{
+  margin-top: 5px;
+  margin-left: 10px;
+ }
+ 
+/*---------------slider---------------*/
+
+ .carousel .carousel-indicators button {
+ width: 10px;
+ height: 10px;
+ border-radius: 100%; 
+ 
+ }
+ .carousel-inner{
+ width: 100%;
+ height: 100%;
+ 
+ }
+ .carousel-caption{
+ background-color: rgba(11, 10, 10, 0.278);
+ border-top: 4px solid green;
+ height: auto;
+ 
+ }
+ .carousel-inner .carousel-item img{
+ height: 100vh;
+ width: 100%;
+ }
+ .carousel .carousel-indicators #icon:hover{
+  background-color: green;
+ } 
+
+ .carousel .carousel-indicators #icon{
+  background-color: gray;
+ }
+ .carousel-indicators #icon.active[data-bs-slide-to="0"] {
+            background-color: green !important;
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+        .carousel-indicators #icon.active[data-bs-slide-to="1"] {
+            background-color: green !important;
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+        .carousel-indicators #icon.active[data-bs-slide-to="2"] {
+            background-color: green !important;
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+ 
+.hero .carousel-control-prev:hover .carousel-control-next-icon,
+.hero .carousel-control-prev:hover .carousel-control-prev-icon,
+.hero .carousel-control-next:hover .carousel-control-next-icon,
+.hero .carousel-control-next:hover .carousel-control-prev-icon {
+  color: #f7f7f7;
+  width: 100px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: green;
+
+}
+
+.hero .carousel-control-prev-icon,
+.hero .carousel-control-next-icon {
+  /* Add some white background */
+    color: gray;  
+  border-radius: 100%;
+  margin-left: 150px;
+}
+
+.hero .carousel-control-prev-icon{
+  margin-right: 100px;
+}
+
+
+.carousel-indicators .li{
+  background-color: green;
+}
+
+
+
+ /*-----------read more button------------*/
+ #Button{
+ border: 2px solid green;
+ color: white;
+ 
+ }
+
+
+ #Button:hover{
+  background-color: green;
+ }
+
+
+
+/*----------------overlapping concept-------------*/
+ .image-container{
+ position: relative;
+ }
+ .overlap-image{
+ position: absolute;
+ right: 25%;
+ }
+
+ .hover-shadow:hover{
+ transform: scale(1.05);
+ transition: transform 0.3s ease-in-out;
+ box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+ }
+
+
+ @media (min-width: 100px) and (max-width: 1000px) {
+ .overlap-card {
+ margin-right: auto ;
+ }
+ .overlap-image{
+ position: static;
+ 
+ }
+ }
+/*-----------------portfolio hovering--------------------*/
+ .block {
+ position: relative;
+ height: auto;
+ 
+ }
+ .overlay {
+ position: absolute;
+ transition: all 0.3s ease;
+ opacity: 0;
+ background-color: rgba(247, 244, 244, 0.864);
+ 
+ }
+.overlay:hover {
+ opacity: 1;
+ }
+ .overlayBottom{
+ width: auto;
+ height: 0;
+ bottom: 20px;
+ right: 75px;
+ left: 1px;
+ background-color: rgba(247, 244, 244, 0.864);
+
+ }
+ .overlayBottom:hover{
+ height: 50px;
+ }
+ 
+ #navbarSupportedContent{
+    font-size: 14px;
+ }
+/*cards System*/
+.circle-container {
+  width: 4vw; /* 5% of the viewport width */
+  height: 4vw;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#services #service-item .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+
+  
+  }
+
+
+#services #service-item .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*icons*/
+
+#services #service-item .icon:hover #insideicon{
+ color: white;
+}
+#services .item-cyan svg:hover path{
+  fill: #0dcaf0;
+}
+#services .item-orange svg:hover path{
+  fill:orange;
+}
+#services .item-teal svg:hover path{
+  fill: teal;
+}
+#services .item-red svg:hover path{
+  fill: red;
+}
+#services .item-pink svg:hover path{
+  fill:pink;
+}
+#services .item-indigo svg:hover path{
+  fill: indigo;
+}
+/*-------------------*/
+
+
+#services #service-item.item-cyan i {
+    color: #0dcaf0;
+}
+#services #service-item.item-orange i {
+    color: orange;
+}
+#services #service-item.item-teal i {
+    color:teal;
+}
+#services #service-item.item-red i {
+    color: red;
+}
+#services #service-item.item-pink i {
+    color: pink;
+}
+#services #service-item.item-indigo i {
+    color: indigo;
+}
+
+#services #service-item .icon i {
+    font-size: 36px;
+    transition: 0.5s;
+    position: relative;
+}
+
+ </style>
+
+ <!----Nav Menu-->
+ <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light custom-navbar" data-aos="fade-down">
+ <div class="container mb-1">
+ <a class="navbar-brand mt-3 justify-content-center fw-bold fs-4 me-0" href="#">COMPANY.</a>
+ <!-- Navbar Toggler -->
+ <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button></div>
+ <!-- Navbar Links -->
+ <div class="container">
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ <ul class="navbar-nav mb-lg-0">
+ <li class="nav-item mt-3">
+ <a class="nav-link active text-success" aria-current="page" href="#">HOME</a>
+ </li>
+ <li class="nav-item dropdown mt-3">
+ <a class="nav-link dropdown-toggle ms-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ ABOUT
+ </a>
+ <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+ <li><a class="dropdown-item" href="#">Action</a></li>
+ <li><a class="dropdown-item" href="#">Another action</a></li>
+ <li><hr class="dropdown-divider"></li>
+ <li><a class="dropdown-item" href="#">Something else here</a></li>
+ </ul>
+ </li>
+ <li class="nav-item mt-3">
+ <a class="nav-link" href="#">SERVICES</a>
+ </li>
+ <li class="nav-item mt-3">
+ <a class="nav-link" href="#">PORTFOLIO</a>
+ </li>
+ <li class="nav-item mt-3">
+ <a class="nav-link" href="#">PRICING</a>
+ </li>
+ <li class="nav-item mt-3">
+ <a class="nav-link" href="#">BLOG</a>
+ </li>
+ <li class="nav-item mt-3">
+ <a class="nav-link" href="#">CONTACT</a>
+ </li>
+ <li class="nav-item mt-4 me-2">
+ <a class="nav-link p-0" href="https://x.com/i/flow/login">
+ <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+ <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+ </svg></a>
+ </li>
+ <li class="nav item mt-4 me-1">
+ <a class="nav-link p-0" href="https://www.facebook.com/login.php/?lang=en-US">
+ <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+ <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+ </svg>
+ </a>
+ </li>
+ <li class="nav-item mt-4 me-1">
+ <a class="nav-link p-0" href="https://www.instagram.com/">
+ <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="CurrentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+ <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+ </svg>
+ </a>
+ </li>
+ <li class="nav-item mt-4 me-1">
+ <a class="nav-link p-0" href="https://www.linkedin.com/feed/">
+ <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="CurrentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+ <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+ </svg>
+ </a>
+ </li>
+ </ul>
+ </div>
+ 
+ </div>
+ </nav>
+
+
+<!--Sliders-->
+ <div class="container-fluid"> 
+ <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+ <div class="carousel-indicators">
+ <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" id="icon"></button>
+ <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" id="icon"></button>
+ <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" id="icon"></button>
+ </div>
+ <div class="carousel-inner ">
+ <div class="carousel-item active ">
+ <img src="Images/hero-carousel-2.jpg" class="img-fluid" alt="...">
+ <div class="carousel-caption  ms-1 me-5 mb-5 pb-5 pe-5 ps-5 w-75">
+ <h2 class="mt-0 mb-4">At vero eos et accusamus</h2>
+ <p class="mb-4">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+ <button type="button" class="btn bg-none mt-1 mb-3 justify-content-center m-5 ps-5 pe-5" id="Button">Read More</button>
+ </div>
+ </div>
+ <div class="carousel-item">
+ <img src="Images/hero-carousel-1.jpg" class="img-fluid" alt="...">
+ <div class="carousel-caption mb-4 ms-1 me-5 mb-5 pb-5 pe-5 ps-5 w-75">
+ <h5 class="mt-0 mb-4">Second slide label</h5>
+ <p class="mb-4">Some representative placeholder content for the second slide.Some representative placeholder content for the first slide.</p>
+ <button type="button" class="btn bg-none mt-1 mb-3 justify-content-center m-5 ps-5 pe-5" id="Button">Read More</button>
+ </div>
+ </div>
+ <div class="carousel-item">
+ <img src="Images/hero-carousel-3.jpg" class="img-fluid" alt="...">
+ <div class="carousel-caption mb-4 ms-1 me-5 mb-5 pb-5 pe-5 ps-5 w-75">
+ <h5 class="mt-0 mb-4">Third slide label</h5>
+ <p class="mb-4">Some representative placeholder content for the third slide.Some representative placeholder content for the first slide.</p>
+ <button type="button" class="btn bg-none mt-1 mb-3 justify-content-center m-5 ps-5 pe-5" id="Button">Read More</button>
+ </div>
+ </div>
+ </div>
+ <section class="hero">
+ <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+ <span class="carousel-control-prev-icon p-4" aria-hidden="true"></span>
+ <span class="visually-hidden w-50">Previous</span>
+ </button>
+ <button class="carousel-control-next p-5" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+ <span class="carousel-control-next-icon p-4" aria-hidden="true"></span>
+ <span class="visually-hidden w-50">Next</span>
+ </button>
+</section>
+ </div>
+</div> 
+ 
+ <!---overlapp concept-->
+<div class="container py-5">
+ <div class="row">
+ <div class="col-md-6 col-sm-12" data-aos="fade-up" data-duration="900"> <!----desktop-->
+ 
+ <h3 class="ms-5">Hello This is my Team</h3>
+ <div class="card mt-4 pb-5 bg-light overlap-card" style="border: none;" id="cardexample">
+ <div class="card-body mb-5" id="cardexample1">
+ <p class="text-muted">EST 1988</p>
+ <h3>Our Story</h3>
+ <p class="w-75">Stylized implementation of HTMLs <abbr> element for abbreviations and acronyms to show the expanded version on hover.</p>
+ <!-- Proper List -->
+ <ul class="list-unstyled">
+ <li class="d-flex align-items-start mb-2">
+ <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check-circle text-success me-2 mt-1" viewBox="0 0 16 16">
+ <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+ <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+ </svg>
+ Hello
+ </li>
+ <li class="d-flex align-items-start mb-2">
+ <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check-circle text-success me-2 mt-1" viewBox="0 0 16 16">
+ <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+ <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+ </svg>
+ Hello
+ </li>
+ <li class="d-flex align-items-start mb-2">
+ <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check-circle text-success me-2 mt-1" viewBox="0 0 16 16">
+ <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+ <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+ </svg>
+ Hello
+ </li>
+ </ul>
+ <p class="w-75">
+ A paragraph is a group of sentences that focuses on a single idea or topic. Paragraphs are the building blocks of written work.
+ </p>
+ <!-- Watch Video Button -->
+ <a href="#" class="btn btn-outline-success d-inline-flex align-items-center">
+ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-play-circle me-2" viewBox="0 0 16 16">
+ <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+ <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+ </svg>
+ Watch Video
+ </a>
+ </div>
+ </div>
+ 
+ </div>
+ <div class="col-md-6 col-sm-12 image-container">
+ <div class="card" style="border: none;" data-aos="zoom-out">
+ <img src="Images/about.jpg" class="img-fluid overlap-image" id="Image">
+ </div>
+ </div>
+ </div>
+</div>
+
+ <!---card System------>
+ 
+ <div class="container-fluid py-2 mt-5" style="background-color: rgba(231, 229, 229, 0.5);">
+ <div class="container d-flex justify-content-center mt-4">
+ <div class="row w-100 h-75">
+ 
+ <div class="col-md-4 col-sm-6 mb-4" >
+ <div class="card border 0 shadow text-center p-5 " data-aos="fade-up" data-duration="700" id="services"> <!-- Adjusted height -->
+ <div class="card-body mb-2  item-cyan position-relative" id="service-item" >
+  <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bi bi-activity" id="insideicon"></i>
+              </div>
+ <h6 class="card-subtitle mb-1 fw-bold fs-5">Card subtitle</h6>
+ <p class="card-text mt-1 fs-11">Some quick example text to build on the card title.Some quick example text to build on the card title.
+ </p>
+ </div>
+ </div>
+ </div>
+
+
+
+
+ <div class=" col-md-4 col-sm-6 mb-4" >
+  <div class="card border 0 shadow text-center p-5 " data-aos="fade-up" data-duration="700" id="services"> <!-- Adjusted height -->
+    <div class="card-body mb-2  item-orange position-relative" id="service-item" >
+     <div class="icon">
+                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                     <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                   </svg>
+                   <i class="bi bi-broadcast" id="insideicon"></i>
+                 </div>
+    <h6 class="card-subtitle mb-1 fw-bold fs-5">Card subtitle</h6>
+    <p class="card-text mt-1 fs-11">Some quick example text to build on the card title.Some quick example text to build on the card title.
+    </p>
+    </div>
+    </div>
+ </div>
+ 
+ <div class="col-md-4 col-sm-6 mb-4" >
+  <div class="card border 0 shadow text-center p-5 " data-aos="fade-up" data-duration="700" id="services"> <!-- Adjusted height -->
+    <div class="card-body mb-2  item-teal position-relative" id="service-item" >
+     <div class="icon">
+                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                     <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                   </svg>
+                   <i class="bi bi-easel" id="insideicon"></i>
+                 </div>
+    <h6 class="card-subtitle mb-1 fw-bold fs-5">Card subtitle</h6>
+    <p class="card-text mt-1 fs-11">Some quick example text to build on the card title.Some quick example text to build on the card title.
+    </p>
+    </div>
+    </div>
+ </div>
+
+
+
+
+ <div class="col-md-4 col-sm-6 mb-4" >
+  <div class="card border 0 shadow text-center p-5 " data-aos="fade-up" data-duration="700" id="services"> <!-- Adjusted height -->
+    <div class="card-body mb-2  item-red position-relative" id="service-item" >
+     <div class="icon">
+                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                     <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                   </svg>
+                   <i class="bi bi-bounding-box-circles" id="insideicon"></i>
+                 </div>
+    <h6 class="card-subtitle mb-1 fw-bold fs-5">Card subtitle</h6>
+    <p class="card-text mt-1 fs-11">Some quick example text to build on the card title.Some quick example text to build on the card title.
+    </p>
+    </div>
+    </div>
+ </div>
+ 
+ 
+ <div class="col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-duration="1100">
+  <div class="card border 0 shadow text-center p-5 " data-aos="fade-up" data-duration="700" id="services"> <!-- Adjusted height -->
+    <div class="card-body mb-2  item-pink position-relative" id="service-item" >
+     <div class="icon">
+                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                     <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                   </svg>
+                   <i class="bi bi-calendar4-week" id="insideicon"></i>
+                 </div>
+    <h6 class="card-subtitle mb-1 fw-bold fs-5">Card subtitle</h6>
+    <p class="card-text mt-1 fs-11">Some quick example text to build on the card title.Some quick example text to build on the card title.
+    </p>
+    </div>
+    </div>
+ </div>
+
+
+
+ <div class="col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-duration="1200">
+ <div class="card border 0 shadow text-center p-5 " data-aos="fade-up" data-duration="700" id="services"> <!-- Adjusted height -->
+ <div class="card-body mb-2  item-indigo position-relative" id="service-item" >
+  <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bi bi-chat-square-text" id="insideicon"></i>
+              </div>
+ <h6 class="card-subtitle mb-1 fw-bold fs-5">Card subtitle</h6>
+ <p class="card-text mt-1 fs-11">Some quick example text to build on the card title.Some quick example text to build on the card title.
+ </p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!-------portfolio-->
+
+ <div class="container text-center my-5" data-aos="fade-up" data-duration="800">
+ <h2 class="text-center">PORTFOLIO</h2>
+
+ <p class="mt-4">Hello This is portfolio sidebar.I'm meant to be writing at this moment. 
+ </p>
+ <div class="container-fluid mt-5 mx-auto text-center">
+ <div class="d-inline-flex gap-1 bg-none" >
+ <button type="button" class="btn btn-success" >All</button>
+ <button type="button" class="ms-2 button1" style="color: gray; background-color: white; border: 0;">App</button>
+ <button type="button" class="ms-2" style="color: gray; background-color: white;border: 0;">Card</button>
+ <button type="button" class="ms-2" style="color: gray; background-color: white;border: 0;">Web</button>
+</div>
+</div>
+
+
+
+ <div class="row mt-5 d-flex justify-content-center">
+ <div class="col-lg-4 col-md-3 col-sm-12">
+
+    <!---------------Part1-->
+
+ <div class="block">
+ 
+ <img src="Images/masonry-portfolio-1.jpg" class="img-fluid mb-4">
+
+ <div class="overlay overlayBottom px-5 w-100 h-25">
+ 
+ <h5 class="position-absolute ms-0 start-0">App1</h5><br>
+ <p class="position-absolute start-0 pt-2 text-muted">This is section 1</p>
+ <div class="d-flex justify-content-end ps-5">
+
+ <a href="http://127.0.0.1:5500/home.html#">
+ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray" class="bi bi-zoom-in" viewBox="0 0 16 16">
+ <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+ <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+ <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+ </svg>
+ </a>
+ <a href="http://127.0.0.1:5500/home.html#">
+ <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30 " fill="gray" class="bi bi-link-45deg ps-1" viewBox="0 0 16 16">
+ <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+ <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+ </svg>
+ </a>
+ </div>
+ </div>
+ </div>
+
+
+<!-------part2-->
+ <div class="block">
+ 
+    <img src="Images/masonry-portfolio-6.jpg" class="img-fluid mb-4">
+   
+   
+    <div class="overlay overlayBottom px-5 w-100 h-25">
+    
+    <h5 class="position-absolute ms-0 start-0">App1</h5><br>
+    <p class="position-absolute start-0 pt-2 text-muted">This is section 1</p>
+    <div class="d-flex justify-content-end ps-5">
+   
+    <a href="http://127.0.0.1:5500/home.html#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray" class="bi bi-zoom-in" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+    <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+    <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+    </svg>
+    </a>
+    <a href="http://127.0.0.1:5500/home.html#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30 " fill="gray" class="bi bi-link-45deg ps-1" viewBox="0 0 16 16">
+    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+    </svg>
+    </a>
+    </div>
+    </div>
+    </div>
+ </div> 
+
+ <div class="col-lg-4 col-md-3 col-sm-12">
+    <div class="block">
+ 
+        <img src="Images/masonry-portfolio-2.jpg" class="img-fluid mb-4">
+       
+       
+        <div class="overlay overlayBottom px-5 w-100 h-25">
+        
+        <h5 class="position-absolute ms-0 start-0">App1</h5><br>
+        <p class="position-absolute start-0 pt-2 text-muted">This is section 1</p>
+        <div class="d-flex justify-content-end ps-5">
+       
+        <a href="http://127.0.0.1:5500/home.html#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray" class="bi bi-zoom-in" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+        </svg>
+        </a>
+        <a href="http://127.0.0.1:5500/home.html#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30 " fill="gray" class="bi bi-link-45deg ps-1" viewBox="0 0 16 16">
+        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+        </svg>
+        </a>
+        </div>
+        </div>
+        </div>
+
+
+
+
+        <div class="block">
+ 
+            <img src="Images/masonry-portfolio-5.jpg" class="img-fluid mb-4">
+           
+           
+            <div class="overlay overlayBottom px-5 w-100 h-25">
+            
+            <h5 class="position-absolute ms-0 start-0">App1</h5><br>
+            <p class="position-absolute start-0 pt-2 text-muted">This is section 1</p>
+            <div class="d-flex justify-content-end ps-5">
+           
+            <a href="http://127.0.0.1:5500/home.html#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray" class="bi bi-zoom-in" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+            <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+            <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+            </svg>
+            </a>
+            <a href="http://127.0.0.1:5500/home.html#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30 " fill="gray" class="bi bi-link-45deg ps-1" viewBox="0 0 16 16">
+            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+            </svg>
+            </a>
+            </div>
+            </div>
+            </div>
+
+
+            <div class="block">
+ 
+                <img src="Images/masonry-portfolio-9.jpg" class="img-fluid mb-4">
+               
+               
+                <div class="overlay overlayBottom px-5 w-100 h-25">
+                
+                <h5 class="position-absolute ms-0 start-0">App1</h5><br>
+                <p class="position-absolute start-0 pt-2 text-muted">This is section 1</p>
+                <div class="d-flex justify-content-end ps-5">
+               
+                <a href="http://127.0.0.1:5500/home.html#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray" class="bi bi-zoom-in" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                </svg>
+                </a>
+                <a href="http://127.0.0.1:5500/home.html#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30 " fill="gray" class="bi bi-link-45deg ps-1" viewBox="0 0 16 16">
+                <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                </svg>
+                </a>
+                </div>
+                </div>
+                </div>
+ </div>
+ <div class="col-lg-4 col-md-3 col-sm-12">
+
+    <div class="block">
+ 
+        <img src="Images/masonry-portfolio-3.jpg" class="img-fluid mb-4">
+       
+       
+        <div class="overlay overlayBottom px-5 w-100 h-25">
+        
+        <h5 class="position-absolute ms-0 start-0">App1</h5><br>
+        <p class="position-absolute start-0 pt-2 text-muted">This is section 1</p>
+        <div class="d-flex justify-content-end ps-5">
+       
+        <a href="http://127.0.0.1:5500/home.html#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray" class="bi bi-zoom-in" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+        </svg>
+        </a>
+        <a href="http://127.0.0.1:5500/home.html#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30 " fill="gray" class="bi bi-link-45deg ps-1" viewBox="0 0 16 16">
+        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+        </svg>
+        </a>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="block">
+ 
+            <img src="Images/masonry-portfolio-4.jpg" class="img-fluid mb-4">
+           
+           
+            <div class="overlay overlayBottom px-5 w-100 h-25">
+            
+            <h5 class="position-absolute ms-0 start-0">App1</h5><br>
+            <p class="position-absolute start-0 pt-2 text-muted">This is section 1</p>
+            <div class="d-flex justify-content-end ps-5">
+           
+            <a href="http://127.0.0.1:5500/home.html#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray" class="bi bi-zoom-in" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+            <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+            <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+            </svg>
+            </a>
+            <a href="http://127.0.0.1:5500/home.html#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30 " fill="gray" class="bi bi-link-45deg ps-1" viewBox="0 0 16 16">
+            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+            </svg>
+            </a>
+            </div>
+            </div>
+            </div>
+
+            <div class="block">
+ 
+                <img src="Images/masonry-portfolio-7.jpg" class="img-fluid mb-4">
+               
+               
+                <div class="overlay overlayBottom px-5 w-100 h-25">
+                
+                <h5 class="position-absolute ms-0 start-0">App1</h5><br>
+                <p class="position-absolute start-0 pt-2 text-muted">This is section 1</p>
+                <div class="d-flex justify-content-end ps-5">
+               
+                <a href="http://127.0.0.1:5500/home.html#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray" class="bi bi-zoom-in" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                </svg>
+                </a>
+                <a href="http://127.0.0.1:5500/home.html#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30 " fill="gray" class="bi bi-link-45deg ps-1" viewBox="0 0 16 16">
+                <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                </svg>
+                </a>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="block">
+ 
+                    <img src="Images/masonry-portfolio-8.jpg" class="img-fluid mb-4">
+                   
+                   
+                    <div class="overlay overlayBottom px-5 w-100 h-25">
+                    
+                    <h5 class="position-absolute ms-0 start-0">App1</h5><br>
+                    <p class="position-absolute start-0 pt-2 text-muted">This is section 1</p>
+                    <div class="d-flex justify-content-end ps-5">
+                   
+                    <a href="http://127.0.0.1:5500/home.html#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray" class="bi bi-zoom-in" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                    <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                    <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                    </svg>
+                    </a>
+                    <a href="http://127.0.0.1:5500/home.html#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30 " fill="gray" class="bi bi-link-45deg ps-1" viewBox="0 0 16 16">
+                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                    </svg>
+                    </a>
+                    </div>
+                    </div>
+                    </div>
+ </div>
+</div>
+</div>
+
+<!-----clients-->
+<div class="container text-center mt-5" data-aos="fade-up" data-duration="800">
+ <h3>CLIENTS</h3>
+ <div class="mx-auto" style="width: 40px; height: 3px; background-color: green; margin-top: 5px;"></div>
+ <p class="mt-3">Hello This is portfolio sidebar.I'm meant to be writing at this moment. 
+ </p>
+</div>
+
+<div class="container text-align-center border 0 mb-5" data-aos="fade-up" data-duration="800">
+ <div class="row d-flex justify-content-center border">
+ <div class="col-lg-3 col-sm-12 col-md-6 p-5 border 0">
+ <img src="Images/client-1.png" class="img-fluid w-75 transition hover-shadow">
+ </div>
+ <div class="col-lg-3 col-sm-12 col-md-6 p-5 border">
+ <img src="Images/client-2.png" class="img-fluid w-75 transition hover-shadow" >
+ </div>
+ <div class="col-lg-3 col-sm-12 col-md-6 p-5 border">
+ <img src="Images/client-3.png" class="img-fluid w-75 transition hover-shadow" >
+ </div>
+ <div class="col-lg-3 col-sm-12 col-md-6 p-5 border">
+ <img src="Images/client-4.png" class="img-fluid w-75 transition hover-shadow" >
+ </div>
+ </div>
+
+ <div class="row d-flex justify-content-center border img-container">
+ <div class="col-lg-3 p-5 border col-sm-12 p-5 col-md-6">
+ <img src="Images/client-5.png" class="img-fluid w-75 transition hover-shadow">
+ </div>
+ <div class="col-lg-3 p-5 border col-sm-12 p-5 col-md-6">
+ <img src="Images/client-6.png" class="img-fluid w-75 transition hover-shadow">
+ </div>
+ <div class="col-lg-3 p-5 border col-sm-12 p-5 col-md-6">
+ <img src="Images/client-7.png" class="img-fluid w-75 transition hover-shadow">
+ </div>
+ <div class="col-lg-3 p-5 border col-sm-12 p-5 col-md-6">
+ <img src="Images/client-8.png" class="img-fluid w-75 transition hover-shadow">
+ </div>
+ </div>
+ </div>
+</div>
+<!--footer-->
+<footer class="mx-auto">
+<div class="container-fluid bg-black text-light pt-5">
+    <div class="container">
+ <div class="row gy-4 mx-auto " style="color: white;">
+ <div class="col-lg-4 col-md-4 col-sm-12">
+ <h3>Company.</h3>
+ <p class="pt-3 text-secondary">08,shirdidham society near <br> laxmi hotel varchcha road surat
+ <p class="mb-0">Phone:+91 9510684176</p>
+ <p class="mb-4">Email: info@gmail.com</p>
+ <!---twitter icon-->
+ <!-- Using btn class for circle effect -->
+ 
+
+
+ <div class="rounded-circle border d-inline-flex align-items-center justify-content-center p-3 me-1" style="width: 30px; height: 30px;">
+ <a class="nav-link" href="https://x.com/i/flow/login">
+ <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="gray" class="bi bi-twitter-x" viewBox="0 0 16 16">
+ <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+ </svg></a>
+ </div>
+ 
+ <!----facebook icon-->
+ <div class="rounded-circle border d-inline-flex align-items-center justify-content-center p-3 me-1" style="width: 30px; height: 30px;">
+ <a class="nav-link" href="https://www.facebook.com/login.php/?lang=en-US">
+ <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="gray" class="bi bi-facebook" viewBox="0 0 16 16">
+ <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+ </svg></a>
+ </div>
+
+ <!----Instagram icon-->
+ <div class="rounded-circle border d-inline-flex align-items-center justify-content-center p-3 me-1" style="width: 30px; height: 30px;">
+ <a class="nav-link" href="https://www.instagram.com/">
+ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-instagram" viewBox="0 0 16 16">
+ <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+ </svg></a>
+ </div>
+
+ <!------Linedin icon---->
+ <div class="rounded-circle border d-inline-flex align-items-center justify-content-center p-3 me-1 mb-0" style="width: 30px; height: 30px;">
+ <a class="nav-link" href="https://www.linkedin.com/feed/">
+ <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="gray" class="bi bi-linkedin" viewBox="0 0 16 16">
+ <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+ </svg></a>
+ </div>
+ </p> 
+ </div>
+
+
+ <div class="col-lg-2 col-md-2 col-sm-12 ms-5">
+ <h6 class="text-decoration fw-bold mb-3">Useful lInks</h6>
+ <ul class="list-unstyled text-secondary">
+ <li class="mb-2">
+  Home
+ </li>
+ <li class="mb-2">
+ About us
+ </li>
+ <li class="mb-2">
+ Services
+ </li>
+ <li class="mb-2">
+ Privacy and Services
+ </li>
+ <li class="mb-2">
+ Terms of Serives
+ </li>
+ </ul>
+ </div>
+
+
+
+
+ <div class="col-lg-2 col-md-2  col-sm-12 ms-5">
+ <h6 class="mb-3">Our services</h6> 
+ <ul class="list-unstyled text-secondary">
+ <li class="mb-2">
+ Web Design
+ </li>
+ <li class="mb-2">
+ Web Developement
+ </li>
+ <li class="mb-2">
+ Product Management
+ </li>
+ <li class="mb-2">
+ Marketing
+ </li>
+ <li>
+ Graphics Design
+ </li>
+ </ul>
+ 
+ </div>
+
+
+ <div class="col-lg-3 col-md-12 col-sm-3">
+ <h6>Our NewsLetter</h6>
+ <p class="text-muted">
+ Subscribe to our newsletter and receive the latest news about our products and services
+ </p>
+ <div class="input-group">
+ <input type="text" class="form-control bg-black" aria-label="Recipient's username" aria-describedby="basic-addon2">
+ <button type="button" class="btn btn-success">Subscribe</button>
+ </div>
+ 
+ </div>
+ <hr>
+
+ <p class="text-center mb-0"> @ Copyright <b>Comapny</b> All Rights Reserved</p>
+ <p class="fs-8 text-center mt-0"> Designed by <span class="text-success">BootstrapMade</span> Distributed by <span class="text-success"> ThemeWagon </span></p>
+ </div>
+ 
+ <div class="text-end me-4 pb-2">
+ <a href="http://127.0.0.1:5500/home.html#">
+ <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+ <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
+ </svg></a>
+ </div>
+ </div> </div>
+</footer>
+ 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+ </script>
+ <script>
+ AOS.init();
+ </script>
+ </body>
+ </html>
